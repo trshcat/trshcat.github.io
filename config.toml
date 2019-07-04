@@ -1,0 +1,38 @@
+baseURL = "https://trashcat.xyz"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "sublime text"
+languageCode = "en"
+language = "en"
+theme = "vncnt-hugo"
+title = "Trashcat · Twitch Streamer"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Trashcat"
+  email = "trash@trashcat.xyz"
+  description = "Landing Page"
+  bio = "I'm Chance, \nbut on the internets I go by Trashcat."
+  avatar = "img/avatar.gif"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    instagram = "https://instagram.com/trashcatt_"
+    twitter = "https://twitter.com/trashcatt_"
+    twitch = "https://twitch.tv/trashcatt"
+    youtube = "https://www.youtube.com/channel/UCrQsYhrDHJz2gUG_Vx2OsAw"
